@@ -1,0 +1,15 @@
+<div class="col" style="height: 800px;">
+    <div class="card h-100">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+        </div>
+        <div class="btn-card-update">
+            <small class="text-muted">{{heroe.aparicion}}</small>
+            <button (click)="verHeroe()" type="button" class="btn btn-outline-primary btn-ver-mas">Ver
+                más...</button>
+            <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-ver-mas">Ver más link...</a> -->
+        </div>
+    </div>
+</div>
